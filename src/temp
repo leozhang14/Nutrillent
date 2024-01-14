@@ -1,0 +1,110 @@
+                <td>{multiplier("ca", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("fe", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("mg", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("k", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("zn", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("va", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("vb12", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("vc", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("vd", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+                <td>{multiplier("ve", row.food).then(value => {
+                  return value * row.amount;
+                })}</td>
+
+
+
+                var foodInput = "beef";
+                var api_url = `https://api.nal.usda.gov/fdc/v1/foods/search?&query=${(foodInput)},&pageSize=2&api_key=6MQ4LW4IKJM0u9xCgJzqOpOjWCbBah1NoPxdWvd0&dataType=Survey%20(FNDDS)`;
+                var multiplier = fetch(api_url).then((response) => {
+                if (response.ok) {
+                  console.log("responseG")
+                } else {
+                  console.log("responseB")
+                }
+                var result = response.text();
+                
+                if (result.ok) {
+                  console.log("resultG")
+                } else {
+                  console.log("resultB")
+                }
+                //Initializing more variables.
+                let obj = JSON.parse(result);
+                var nutrient = "fe";
+                var numOfNutrients = Object.keys(obj.foods[0].foodNutrients).length;
+                if (nutrient === "fe") {
+                  for (var i = 0; i < numOfNutrients; i++) {
+                    if (
+                      obj.foods[0].foodNutrients[i].nutrientName === "Iron, Fe"
+                    ) {
+                      console.log(obj.foods[0].foodNutrients[i].value);
+                      return (obj.foods[0].foodNutrients[i].value);
+                    }
+                    
+                  }
+                }
+                  return 5;
+                });
+
+                rows.map((row, idx)
+
+                return response.text().then(function (result) {
+                    //Initializing more variables.
+                    let obj = JSON.parse(result);
+                    var numOfNutrients = Object.keys(obj.foods[0].foodNutrients).length;
+                    if (nutrient === "fe") {
+                      for (var i = 0; i < numOfNutrients; i++) {
+                        if (
+                          obj.foods[0].foodNutrients[i].nutrientName === "Iron, Fe"
+                        ) {
+                          console.log(obj.foods[0].foodNutrients[i].value);
+                          var multiplier = obj.foods[0].foodNutrients[i].value;
+                          <td>{"ASDA"}</td>
+                        }
+                        
+                      }
+                    }
+                    return 5;
+                  });
+
+                  var foodInput = 0;
+                  var nutrient = "fe";
+                  var api_url = `https://api.nal.usda.gov/fdc/v1/foods/search?&query=${(foodInput)},&pageSize=2&api_key=6MQ4LW4IKJM0u9xCgJzqOpOjWCbBah1NoPxdWvd0&dataType=Survey%20(FNDDS)`;
+                  fetch(api_url).then((response) => {
+                    return response.text().then(function (result) {
+                      //Initializing more variables.
+                      let obj = JSON.parse(result);
+                      var numOfNutrients = Object.keys(obj.foods[0].foodNutrients).length;
+                      if (nutrient === "fe") {
+                        for (var i = 0; i < numOfNutrients; i++) {
+                          if (
+                            obj.foods[0].foodNutrients[i].nutrientName === "Iron, Fe"
+                          ) {
+                            console.log(obj.foods[0].foodNutrients[i].value);
+                            var multiplier = obj.foods[0].foodNutrients[i].value;
+                            <td>{"ASDA"}</td>
+                          }
+                          
+                        }
+                      }
+                      return 5;
+                    });
+                  }); 

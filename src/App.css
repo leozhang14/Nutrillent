@@ -1,0 +1,53 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #faf9f6;
+  background-image: url(../background.avif);
+  background-size: cover;
+  padding: 100px;
+  padding-bottom: 150px;
+}
+
+h1 {
+  font-family: 'Lemon', serif;
+  font-size: 100px;
+  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.btn {
+  margin-top: 1rem;
+  border: none;
+  font-size: 20px;
+  background-color: #1dd893;
+  color: #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px #d1bbbb;
+  width: 140px;
+  height: 60px;
+}
+
+p {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 100px;
+  line-height: 1.8;
+  padding-right: 100px;
+  padding-bottom: 0px;
+}
+
+.custom {
+  font-family: 'Lemon', serif;
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+  display: block;
+  text-align: center;
+}
