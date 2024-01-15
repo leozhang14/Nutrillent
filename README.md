@@ -8,7 +8,7 @@ Grace G.
 Emma D.
 Dora C.
 
-After the hackathon ended, I finished programming the web app on my own and renamed it to "Nutrillent". As my skills improve, I hope to continue working on this project and continue to make it better. Recent implementations include an editable table with a running total.
+After the hackathon ended, I finished programming the web app on my own and renamed it to "Nutrillent". As my skills improve, I hope to continue working on this project and continue to make it better. Recent updates include using React to allow table row deletion and editing with a running total.
 
 Nutritional information was retrieved from the US Department of Agriculture (USDA) FoodData Central API.
 
