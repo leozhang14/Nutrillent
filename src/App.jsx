@@ -105,6 +105,7 @@ function App() {
   return (
     <div className="App">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       <link rel="preconnect" href="https://fonts.gstatic.com" CrossOrigin />
       <link
         href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
@@ -142,7 +143,10 @@ function App() {
         deficiencies and disorders, please consult a medically licensed
         professional.
         <br></br>
-        <span className="custom">Built for Hack the Pulse 2022.</span>
+        <span className="custom">Originally built for Hack the Pulse 2022.</span>
+        <div className="centered-container">
+          <a href="https://github.com/lzboy14/Nutrillent" aria-label="GitHub" className="github-link" target="_blank" rel="noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </div>
       </p>
     </div>
   );

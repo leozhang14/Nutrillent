@@ -51,3 +51,15 @@ p {
   display: block;
   text-align: center;
 }
+
+.centered-container {
+  text-align: center;
+}
+
+.github-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 30px;
+  position: relative;
+}
+
