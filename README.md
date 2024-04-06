@@ -14,6 +14,7 @@ Upcoming improvements:
 
 Short-term:
  - useMemo to cache calculations of nutritional data between re-renders of the Modal component
+ - useCallback to cache function definitions between re-renders based on dependencies (use for updating rowMultipliers)
  - Optimizing the rendering of code (cleaner code by mapping from a state variable)
    
 EXAMPLE:
