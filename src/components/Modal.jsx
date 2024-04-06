@@ -12,6 +12,7 @@ export const Modal = ({ closeModal, onSubmit, defaultVal }) => {
 
     }
   );
+  // batch
   const [typeErrors, setTypeErrors] = useState("");
   const [foodError, setFoodError] = useState("");
   const [amountError, setAmountError] = useState("");
@@ -32,10 +33,12 @@ export const Modal = ({ closeModal, onSubmit, defaultVal }) => {
     }
   };
 
+  // useCallback to rpelace handleChange
   const handleChange = (e) => {
     setRowData({ ...rowData, [e.target.name]: e.target.value });
   };
 
+  // useMemo -> to replace Multiplier
   const handleSubmitInitial = async(e) => {
     e.preventDefault();
 
