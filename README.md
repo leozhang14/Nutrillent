@@ -32,8 +32,9 @@ Long-term:
   - Possibly MERN stack
 - Add user authentication with OAuth (react-google-login library)
   - Manage user sessions with cookies/tokens
-- Use D3.js for users to visualize their nutritional data   
-
+- Software for users to visualize their nutritional data (D3.js)
+- Mobile responsiveness?
+  
 Nutritional information was retrieved from the US Department of Agriculture (USDA) FoodData Central API.
 
 Deployed using Microsoft Azure.
