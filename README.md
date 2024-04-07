@@ -34,6 +34,8 @@ EXAMPLE:
 Long-term:
 - Transition from static to dynamic website (Node + Express)
   - Possibly MERN stack
+- More pages (progress tracker, meal planner, recipes, etc.)
+  - Could use react router  
 - Add user authentication with OAuth (react-google-login library)
   - Manage user sessions with cookies/tokens
 - Software for users to visualize their nutritional data (D3.js)
