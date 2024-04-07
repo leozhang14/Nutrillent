@@ -4,7 +4,7 @@ import { BsFillXSquareFill, BsPencilSquare } from "react-icons/bs";
 
 import "./Table.css";
 
-export const Table = ({ rows, deleteRow, editRow, total}) => {
+export const Table = ({rows, deleteRow, editRow, total}) => {
   return (
     <div className="table-wrapper">
       <table className="table">
